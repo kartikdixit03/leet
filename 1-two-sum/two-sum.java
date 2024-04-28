@@ -17,6 +17,6 @@ class Solution {
         }
 
         // Return a special value when no solution is found
-        return new int[]{-1, -1}; 
+        return null; 
     }
 }
