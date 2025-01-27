@@ -1,11 +1,8 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
-        int sl1 = s.length();
-        int sl2 = s.length();
-        TreeMap<Character,Integer> sMap = new TreeMap<>();
-        TreeMap<Character,Integer> tMap = new TreeMap<>();
-        if(sl1!=sl2){
-
+    HashMap<Character,Integer> sMap = new HashMap<>();
+    HashMap<Character,Integer> tMap = new HashMap<>();
+        if(s.length()!=t.length()){
             return false;
         }
         for(char n : s.toCharArray()){
@@ -25,14 +22,6 @@ class Solution {
                 tMap.put(m,1);
         }
         }
-
-     
-        if(tMap.equals(sMap)){
-            return true;
-        }
-  
-       return false;
-
-
+       return tMap.equals(sMap);
         }
     }
