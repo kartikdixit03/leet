@@ -35,7 +35,7 @@ class Solution {
 
                 // Start time will always be the smaller one
                 // Mostly prev[0] remains unchanged because array is sorted
-                prev[0] = Math.min(prev[0], curr[0]);
+                // prev[0] = Math.min(prev[0], curr[0]);
 
                 // Take the maximum end time
                 // [1,4] + [4,7] => [1,7]
