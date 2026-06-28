@@ -9,11 +9,11 @@ class Solution {
             set.remove(s.charAt(left));
             left++;
     }
-        if(!set.contains(s.charAt(right))){
+        // if(!set.contains(s.charAt(right))){
             set.add(s.charAt(right));
             System.out.println(set);
             count= right-left+1;
-        }
+        // }
        
         
          maxCount = Math.max(count,maxCount);
